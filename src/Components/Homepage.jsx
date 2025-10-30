@@ -1,14 +1,16 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Button from './CommonComponents/Button'
 import Products from './Products'
 import { useLocation } from 'react-router-dom'
 import GetInTouch from './GetInTouch'
 import Footer from './Footer'
+import { Spin } from 'antd'
 
 const Homepage = () => {
   const scrollRef = useRef()
   const location = useLocation();
-
+  const [loading, setLoading] = useState(true);
+  
   const handleScrolltoProducts = ()=>{
     scrollRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -23,9 +25,16 @@ const Homepage = () => {
     <>
     
     <div className="relative w-full min-h-[80vh] flex max-md:items-center md:h-screen overflow-hidden bg-black text-white">
+      
+      {loading && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black z-20">
+            <Spin size="large" tip="Loading image..." />
+          </div>
+      )}
       <img
         src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
         alt="Winter Fashion"
+        onLoad={() => setLoading(false)}
         className="absolute inset-0 w-full h-full object-cover opacity-70"
       />
 
