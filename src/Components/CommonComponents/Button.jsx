@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../CommonComponents/button.css"; 
+import "../CommonComponents/Button.css"; 
 const Button = ({ text, onClick, type = "button", className = "" }) => {
   return (
     <div className={`button-borders ${className}`}>
