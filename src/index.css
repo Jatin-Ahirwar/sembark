@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Neue;
+  src: url('../src/fonts/NeueMontreal-Regular.ttf');
+}
+@font-face {
+  font-family: Founders;
+  src: url('../src/fonts/FoundersGrotesk-Semibold.ttf');
+}
+
+@theme{
+    --font-Neue: Neue ,'sans-serif ';
+    --font-Founders: Founders ,'sans-serif '
+}
+.ant-menu-item-selected {
+  background-color: #f3f4f6 !important;
+  border-radius: 0.5rem !important;    
+  color: #000 !important;             
+}
+
+.ant-menu-item:hover {
+  background-color: #e5e7eb !important; 
+  border-radius: 0.5rem !important;
+}
+
+/* pagination-theme.css */
+.ant-pagination-item {
+  background-color: #fff !important;
+  border: none !important; 
+}
+
+.ant-pagination-item a {
+  color: #000 !important;
+}
+
+.ant-pagination-item-active {
+  background-color: #000 !important;
+  border: none !important;
+}
+
+.ant-pagination-item-active a {
+  color: #fff !important;
+}
+
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  color: #000 !important;
+  border: none !important; 
+  background: #fff !important;
+}
+
+.ant-pagination-disabled .ant-pagination-item-link {
+  color: #aaa !important;
+  background: #f5f5f5 !important;
+  border: none !important;
+}
+.custom-toast {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  text-align: center !important;
+}
+
