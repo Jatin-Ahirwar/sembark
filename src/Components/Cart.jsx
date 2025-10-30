@@ -56,6 +56,7 @@ const Cart = () => {
                   <img
                     src={item.image}
                     alt={item.title}
+                    loading="lazy"
                     className="w-20 h-20 sm:w-24 sm:h-24 object-contain bg-gray-50 rounded-lg"
                   />
 
@@ -100,6 +101,7 @@ const Cart = () => {
             <img
               src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png"
               alt="Empty Cart"
+              loading="lazy"
               className="w-24 h-24 opacity-70 mb-4"
             />
             <h2 className="text-sm sm:text-lg text-gray-500">Your cart is empty</h2>

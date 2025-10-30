@@ -13,6 +13,11 @@
     --font-Neue: Neue ,'sans-serif ';
     --font-Founders: Founders ,'sans-serif '
 }
+body{
+  font-family: Neue;
+  letter-spacing: 0.5px;
+}
+
 .ant-menu-item-selected {
   background-color: #f3f4f6 !important;
   border-radius: 0.5rem !important;    

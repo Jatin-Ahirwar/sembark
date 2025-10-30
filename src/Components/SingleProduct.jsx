@@ -106,6 +106,7 @@ const SingleProduct = () => {
             <img
               src={productDetail?.image}
               alt={productDetail?.title}
+              loading="lazy"
               className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 object-contain transition-transform duration-300 hover:scale-105"
             />
           </div>

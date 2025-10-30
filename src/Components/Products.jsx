@@ -140,6 +140,7 @@ const Products = () => {
                 <img
                   src={item.image}
                   alt={item.title}
+                  loading="lazy"
                   className="w-36 h-36 md:w-40 md:h-40 object-contain"
                 />
               </div>
